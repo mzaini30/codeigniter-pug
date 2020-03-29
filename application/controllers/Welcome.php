@@ -3,7 +3,6 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 class Welcome extends MY_Controller {
 	
-
 	/**
 	 * Index Page for this controller.
 	 *
@@ -19,12 +18,22 @@ class Welcome extends MY_Controller {
 	 * map to /index.php/welcome/<method_name>
 	 * @see https://codeigniter.com/user_guide/general/urls.html
 	 */
+
 	public function index()
 	{
 		$this->load->view('welcome_message');
 	}
 
 	public function halo(){
-		$this->view('halo');
+		$this->view('beranda/index');
+	}
+
+	public function panggil($nama = 'Zen'){
+		$this->view('beranda/panggil', compact('nama'));
+	}
+
+	public function data(){
+		$data = [1, 2, 3, 4, 5];
+		$this->view('beranda/data', compact('data'));
 	}
 }
