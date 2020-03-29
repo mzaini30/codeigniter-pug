@@ -18,7 +18,7 @@ Contohnya ada seperti di file `/application/controllers/Welcome.php`:
 
 ```php
 public function halo(){
-	$this->view('beranda/index');
+  $this->view('beranda/index');
 }
 ```
 
@@ -28,7 +28,7 @@ Di controller:
 
 ```php
 public function panggil($nama = 'Zen'){
-	$this->view('beranda/panggil', compact('nama'));
+  $this->view('beranda/panggil', compact('nama'));
 }
 ```
 
@@ -38,7 +38,7 @@ Di view:
 extends ../layout/default.pug
 
 block isi
-	h1 Hello #{nama}
+  h1 Hello #{nama}
 ```
 
 Contoh link: `http://localhost:2020/welcome/panggil/Aurel`. Hasilnya:
