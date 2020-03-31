@@ -48,14 +48,20 @@ Contoh link: `http://localhost:2020/welcome/panggil/Aurel`. Hasilnya:
 </h1></body></html>
 ```
 
+## Contoh penggunaan Session
+
+```php
+public function halo(){
+	$this->session->set_userdata('nama', 'Zen');
+	$userdata = $this->session->userdata('nama');
+	$this->view('beranda/index', compact('userdata'));
+}
+```
+
 ## Filter yang tersedia
 
 - Markdown (dengan `:markdown`)
 - Stylus (dengan `:stylus`). Kalau yang Stylus ini, nggak perlu pakai `style` lagi. Dia ketambah otomatis
-
-## TODO
-
-Menggunakan global variabel. Contohnya aja untuk menggunakan `$this->session->flashdata('status')` di dalam Pug
 
 ## Catatan
 

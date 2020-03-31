@@ -25,7 +25,9 @@ class Welcome extends MY_Controller {
 	}
 
 	public function halo(){
-		$this->view('beranda/index');
+		$this->session->set_userdata('nama', 'Zen');
+		$userdata = $this->session->userdata('nama');
+		$this->view('beranda/index', compact('userdata'));
 	}
 
 	public function panggil($nama = 'Zen'){
