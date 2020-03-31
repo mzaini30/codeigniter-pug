@@ -4,8 +4,68 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "85be8d872b9f19e26f0939bc70e7c99d",
+    "content-hash": "0871756b4f2915352da3b50e70e850cf",
     "packages": [
+        {
+            "name": "cebe/markdown",
+            "version": "1.2.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/cebe/markdown.git",
+                "reference": "9bac5e971dd391e2802dca5400bbeacbaea9eb86"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/cebe/markdown/zipball/9bac5e971dd391e2802dca5400bbeacbaea9eb86",
+                "reference": "9bac5e971dd391e2802dca5400bbeacbaea9eb86",
+                "shasum": ""
+            },
+            "require": {
+                "lib-pcre": "*",
+                "php": ">=5.4.0"
+            },
+            "require-dev": {
+                "cebe/indent": "*",
+                "facebook/xhprof": "*@dev",
+                "phpunit/phpunit": "4.1.*"
+            },
+            "bin": [
+                "bin/markdown"
+            ],
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.2.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "cebe\\markdown\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Carsten Brandt",
+                    "email": "mail@cebe.cc",
+                    "homepage": "http://cebe.cc/",
+                    "role": "Creator"
+                }
+            ],
+            "description": "A super fast, highly extensible markdown parser for PHP",
+            "homepage": "https://github.com/cebe/markdown#readme",
+            "keywords": [
+                "extensible",
+                "fast",
+                "gfm",
+                "markdown",
+                "markdown-extra"
+            ],
+            "time": "2018-03-26T11:24:36+00:00"
+        },
         {
             "name": "ci-pug/ci-pug",
             "version": "2.0.1",
@@ -184,6 +244,51 @@
             "time": "2017-10-27T21:27:00+00:00"
         },
         {
+            "name": "kylekatarnls/stylus",
+            "version": "1.0.8",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/kylekatarnls/Stylus.php.git",
+                "reference": "83396b0b96ce7ef89146d8f40287941025b62f60"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/kylekatarnls/Stylus.php/zipball/83396b0b96ce7ef89146d8f40287941025b62f60",
+                "reference": "83396b0b96ce7ef89146d8f40287941025b62f60",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": ">=4.0 <6"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "Stylus": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "AustP"
+                },
+                {
+                    "name": "neemzy",
+                    "email": "tom.panier@beseen.fr"
+                },
+                {
+                    "name": "kylekatarnls"
+                }
+            ],
+            "description": "Stylus preprocessor for PHP (see https://github.com/AustP/Stylus.php, it's an exact fork except the minimum stability)",
+            "time": "2020-01-04T13:03:07+00:00"
+        },
+        {
             "name": "nodejs-php-fallback/nodejs-php-fallback",
             "version": "1.5.1",
             "source": {
@@ -227,6 +332,51 @@
             ],
             "description": "Allow you to call node.js module or scripts throught PHP and call a fallback function if node.js is not available",
             "time": "2020-01-09T23:51:08+00:00"
+        },
+        {
+            "name": "nodejs-php-fallback/stylus",
+            "version": "1.0.4",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/kylekatarnls/stylus.git",
+                "reference": "98ea2278d658e373d512a6d58eb887f4ca8ac13d"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/kylekatarnls/stylus/zipball/98ea2278d658e373d512a6d58eb887f4ca8ac13d",
+                "reference": "98ea2278d658e373d512a6d58eb887f4ca8ac13d",
+                "shasum": ""
+            },
+            "require": {
+                "kylekatarnls/stylus": "^1.0",
+                "nodejs-php-fallback/nodejs-php-fallback": "^1.2"
+            },
+            "require-dev": {
+                "codeclimate/php-test-reporter": "dev-master",
+                "composer/composer": "^1.2",
+                "phpunit/phpunit": ">=4.8 <6.0"
+            },
+            "type": "library",
+            "extra": {
+                "npm": "stylus"
+            },
+            "autoload": {
+                "psr-0": {
+                    "NodejsPhpFallback\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Kyle",
+                    "email": "kylekatarnls@gmail.com"
+                }
+            ],
+            "description": "PHP wrapper to execute stylus node package or fallback to a PHP alternative",
+            "time": "2019-01-16T14:44:07+00:00"
         },
         {
             "name": "phug/js-transformer-filter",
@@ -465,6 +615,94 @@
                 "template"
             ],
             "time": "2020-02-03T23:15:28+00:00"
+        },
+        {
+            "name": "pug-php/pug-filter-markdown",
+            "version": "1.2.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/pug-php/pug-filter-markdown.git",
+                "reference": "8fe5832db71d3e8adfa024d8205ea9eb78ff3ad2"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/pug-php/pug-filter-markdown/zipball/8fe5832db71d3e8adfa024d8205ea9eb78ff3ad2",
+                "reference": "8fe5832db71d3e8adfa024d8205ea9eb78ff3ad2",
+                "shasum": ""
+            },
+            "require": {
+                "cebe/markdown": "^1.1",
+                "pug-php/pug": "^2.0 || ^3.0@alpha"
+            },
+            "replace": {
+                "kylekatarnls/jade-filter-markdown": "self.version"
+            },
+            "require-dev": {
+                "codeclimate/php-test-reporter": "dev-master",
+                "phpunit/phpunit": ">=4.8 <6.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "Pug": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Kyle Katarn",
+                    "email": "kylekatarnls@gmail.com"
+                }
+            ],
+            "description": "Markdown filter for Pug-php",
+            "time": "2017-10-03T11:17:08+00:00"
+        },
+        {
+            "name": "pug-php/pug-filter-stylus",
+            "version": "2.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/pug-php/pug-filter-stylus.git",
+                "reference": "a7569598063d6e035192856ab8758fcd9c2284aa"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/pug-php/pug-filter-stylus/zipball/a7569598063d6e035192856ab8758fcd9c2284aa",
+                "reference": "a7569598063d6e035192856ab8758fcd9c2284aa",
+                "shasum": ""
+            },
+            "require": {
+                "nodejs-php-fallback/stylus": "^1.0",
+                "pug-php/pug": "^2.0 || ^3.0"
+            },
+            "replace": {
+                "kylekatarnls/jade-filter-stylus": "self.version"
+            },
+            "require-dev": {
+                "codeclimate/php-test-reporter": "dev-master",
+                "phpunit/phpunit": ">=4.8 <6.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "Pug": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Kyle Katarn",
+                    "email": "kylekatarnls@gmail.com"
+                }
+            ],
+            "description": "Render stylus code as compiled CSS in a style tag",
+            "time": "2017-10-03T10:06:55+00:00"
         },
         {
             "name": "symfony/polyfill-mbstring",

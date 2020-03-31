@@ -48,7 +48,16 @@ Contoh link: `http://localhost:2020/welcome/panggil/Aurel`. Hasilnya:
 </h1></body></html>
 ```
 
+## Filter yang tersedia
+
+- Markdown (dengan `:markdown`)
+- Stylus (dengan `:stylus`). Kalau yang Stylus ini, nggak perlu pakai `style` lagi. Dia ketambah otomatis
+
 ## TODO
 
-- Menggunakan filter Pug
-- Menggunakan global variabel. Contohnya aja untuk menggunakan `$this->session->flashdata('status')` di dalam Pug
+Menggunakan global variabel. Contohnya aja untuk menggunakan `$this->session->flashdata('status')` di dalam Pug
+
+## Catatan
+
+- [Filter PHP Pug](http://pug-filters.selfbuild.fr/)
+- [Docs PHP Pug](https://devhub.io/repos/pug-php-pug)

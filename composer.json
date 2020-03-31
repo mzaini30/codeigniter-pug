@@ -13,7 +13,9 @@
 	"require": {
 		"php": ">=5.3.7",
 		"ext-pdo_sqlite": "*",
-		"ci-pug/ci-pug": "^2.0"
+		"ci-pug/ci-pug": "^2.0",
+		"pug-php/pug-filter-stylus": "^2.1",
+		"pug-php/pug-filter-markdown": "^1.2"
 	},
 	"suggest": {
 		"paragonie/random_compat": "Provides better randomness in PHP 5.x"
