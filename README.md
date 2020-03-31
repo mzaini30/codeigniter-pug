@@ -52,9 +52,9 @@ Contoh link: `http://localhost:2020/welcome/panggil/Aurel`. Hasilnya:
 
 ```php
 public function halo(){
-	$this->session->set_userdata('nama', 'Zen');
-	$userdata = $this->session->userdata('nama');
-	$this->view('beranda/index', compact('userdata'));
+  $this->session->set_userdata('nama', 'Zen');
+  $userdata = $this->session->userdata('nama');
+  $this->view('beranda/index', compact('userdata'));
 }
 ```
 
